@@ -5,8 +5,6 @@ const Canvas = (props: JSX.IntrinsicAttributes & React.ClassAttributes<HTMLCanva
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const canvasContextRef = useRef<CanvasRenderingContext2D | null>(null);
 
-  console.log(canvasRef);
-
   useEffect(() => {
     // Initialize
     if (canvasRef.current) {
