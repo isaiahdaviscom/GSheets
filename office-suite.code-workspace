@@ -1,17 +1,49 @@
 {
 	"folders": [
 		{
-			"path": ".",
+			"name": "App",
+			"path": "./my-app"
+		},
+		{
+			"name": "Components",
+			"path": "./my-app/src/components"
+		},
+		{
+			"name": "Settings",
+			"path": "./.vscode"
+		},
+		{
+			"name": "Core",
+			"path": "./my-app/src"
+		},
+		{
+			"name": "Views",
+			"path": "./my-app/public"
+		},
+		{
+			"name": "Utilities",
+			"path": "./my-app/src/util"
+		},
+		{
+			"path": "."
 		}
 	],
 	"settings": {
 		"editor.tabSize": 2,
+		"window.zoomLevel": -1,
+		"files.autoSave": "afterDelay",
 		"terminal.integrated.cwd": "${workspaceFolder}\\my-app",
 		"editor.formatOnSave": false,
 		"xd.lastPackage": "${workspaceFolder}\\designsystem",
 		"xd.globalEditor": false,
 		"files.exclude": {
-			"**/node_modules": true
+			"**/node_modules": true,
+			"**/components": true,
+			"**/util": true,
+			"**/public": true,
+			"**/src": true,
+			"**/my-app": true,
+			"**/.vscode": true
 		},
 		"terminal.integrated.tabs.location": "right",
 		"workbench.panel.defaultLocation": "bottom",
