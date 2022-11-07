@@ -2,19 +2,22 @@ import React, { useRef, useEffect } from 'react';
 
 const Canvas = (props: JSX.IntrinsicAttributes & React.ClassAttributes<HTMLCanvasElement> & React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
 
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const contextRef = useRef(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const canvasContextRef = useRef<CanvasRenderingContext2D | null>(null);
 
   console.log(canvasRef);
 
   useEffect(() => {
-    const canvas = canvasRef.current;
-    const context = canvas.getContext('2d');
-    contextRef.current = context;
-    //Our first draw
-    context.fillStyle = '#000000';
-    context.fillRect(0, 0, context.canvas.width, context.canvas.height);
+    // Initialize
+    if (canvasRef.current) {
+      canvasContextRef.current = canvasRef.current.getContext('2d');
+      let ctx = canvasContextRef.current; // Assigning to a temp variable
+      ctx!.beginPath(); // Note the Non Null Assertion
+      ctx!.arc(95, 50, 40, 0, 2 * Math.PI);
+      ctx!.stroke();
+    }
   }, []);
+
 
   return <canvas id='canvas' ref={canvasRef} {...props} />;
 };
