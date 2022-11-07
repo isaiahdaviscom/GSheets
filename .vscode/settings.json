@@ -1,0 +1,10 @@
+{
+  "editor.tabSize": 2,
+  "terminal.integrated.cwd": "${workspaceFolder}\\my-app",
+  "terminal.integrated.tabs.defaultColor": "terminal.ansiMagenta",
+  "javascript.format.semicolons": "insert",
+  "javascript.suggest.completeFunctionCalls": true,
+  "typescript.format.semicolons": "insert",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file"
+}

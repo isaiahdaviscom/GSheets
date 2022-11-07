@@ -1,0 +1,10 @@
+.action_bar {
+  border: 1px solid #000000;
+  border-right: none;
+  border-left: none;
+}
+
+progress {
+  display: block;
+  width: 100%;
+}

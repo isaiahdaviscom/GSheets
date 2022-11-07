@@ -1,0 +1,49 @@
+{
+	"folders": [
+		{
+			"path": ".",
+		}
+	],
+	"settings": {
+		"editor.tabSize": 2,
+		"terminal.integrated.cwd": "${workspaceFolder}\\my-app",
+		"editor.formatOnSave": false,
+		"xd.lastPackage": "c:\\Users\\IBlac\\OneDrive\\Desktop\\MyProjects\\OfficeSuite\\designsystem",
+		"xd.globalEditor": false,
+		"files.exclude": {
+			"**/node_modules": true
+		},
+		"terminal.integrated.tabs.location": "right",
+		"workbench.panel.defaultLocation": "bottom",
+		"terminal.integrated.defaultLocation": "view",
+		"terminal.integrated.profiles.windows": {
+			"PowerShell": {
+				"source": "PowerShell",
+				"icon": "terminal-powershell"
+			},
+			"Command Prompt": {
+				"path": [
+					"${env:windir}\\Sysnative\\cmd.exe",
+					"${env:windir}\\System32\\cmd.exe"
+				],
+				"args": [],
+				"icon": "terminal-cmd"
+			},
+			"Git Bash": {
+				"source": "Git Bash"
+			}
+		}
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch Chrome Localhost",
+				"request": "launch",
+				"type": "chrome",
+				"url": "http://localhost:3000",
+				"webRoot": "${workspaceFolder}"
+			}
+		]
+	}
+}

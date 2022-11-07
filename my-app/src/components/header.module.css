@@ -1,0 +1,70 @@
+.logo,
+.menu_main,
+.menu_share,
+.menu_top,
+.container {
+  display: flex;
+}
+
+.logo {
+  background-color: aquamarine;
+  width: 78px;
+}
+
+.menu_top {
+  flex-direction: row;
+}
+
+.menu_main {
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+}
+
+.menu_main li,
+.menu_share li {
+  list-style: none;
+}
+
+.docs-title-input {
+  font-size: 1.2em;
+}
+
+.userSelectNone {
+  user-select: none;
+}
+
+.avatar {
+  border-radius: 100%;
+}
+
+.gb_1a {
+  height: 40px;
+  position: absolute;
+  right: -4px;
+  top: -4px;
+  width: 40px;
+}
+
+.share {
+  background-image: none;
+  border: 1px solid transparent !important;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  height: 36px;
+  letter-spacing: 0.25px;
+  line-height: 16px;
+  padding: 9px 24px 11px 24px;
+  background: #188038;
+  color: #fff;
+  padding: 9px 16px 10px 12px;
+  text-transform: capitalize;
+}
+
+.avatar_container {
+  position: relative;
+}
