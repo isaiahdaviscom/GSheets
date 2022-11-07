@@ -8,7 +8,7 @@
 		"editor.tabSize": 2,
 		"terminal.integrated.cwd": "${workspaceFolder}\\my-app",
 		"editor.formatOnSave": false,
-		"xd.lastPackage": "c:\\Users\\IBlac\\OneDrive\\Desktop\\MyProjects\\OfficeSuite\\designsystem",
+		"xd.lastPackage": "${workspaceFolder}\\designsystem",
 		"xd.globalEditor": false,
 		"files.exclude": {
 			"**/node_modules": true
