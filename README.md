@@ -2,7 +2,7 @@
 
 ## **Description**
 
-One mans attempt to recreate the Google's Sheets application.
+One mans attempt to recreate the Google Sheets web-based application.
 
 ## **Design**
 
