@@ -1,40 +1,49 @@
 {
 	"folders": [
 		{
-			"name": "App",
-			"path": "./my-app"
+			"name": "_env",
+			"path": "../my-app"
+		},
+		{
+			"name": "_docs",
+			"path": ".."
+		},
+		{
+			"name": "_workspaces",
+			"path": "."
+		},
+		{
+			"name": "API",
+			"path": "../my-app/src/api"
+		},
+		{
+			"name": "Application",
+			"path": "../my-app/src"
 		},
 		{
 			"name": "Components",
-			"path": "./my-app/src/components"
-		},
-		{
-			"name": "Settings",
-			"path": "./.vscode"
-		},
-		{
-			"name": "Core",
-			"path": "./my-app/src"
+			"path": "../my-app/src/components"
 		},
 		{
 			"name": "Views",
-			"path": "./my-app/public"
+			"path": "../my-app/public"
+		},
+		{
+			"name": "States Management",
+			"path": "../my-app/states"
 		},
 		{
 			"name": "Utilities",
-			"path": "./my-app/src/util"
-		},
-		{
-			"path": "."
+			"path": "../my-app/src/util"
 		}
 	],
 	"settings": {
 		"editor.tabSize": 2,
 		"window.zoomLevel": -1,
 		"files.autoSave": "afterDelay",
-		"terminal.integrated.cwd": "${workspaceFolder}\\my-app",
+		"terminal.integrated.cwd": "../my-app",
 		"editor.formatOnSave": false,
-		"xd.lastPackage": "${workspaceFolder}\\designsystem",
+		"xd.lastPackage": "../designsystem",
 		"xd.globalEditor": false,
 		"files.exclude": {
 			"**/node_modules": true,
@@ -42,6 +51,7 @@
 			"**/util": true,
 			"**/public": true,
 			"**/src": true,
+			"**/states": true,
 			"**/my-app": true,
 			"**/.vscode": true
 		},

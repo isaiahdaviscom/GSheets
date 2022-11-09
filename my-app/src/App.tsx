@@ -1,12 +1,10 @@
 import React from 'react';
 import './App.css';
-import Table from './components/Table';
-import Formulabar from './components/Formulabar';
-import Footer from './Footer';
 import Header from './components/Header';
 import Toolbar from './components/Actionbar';
-
-
+import Formulabar from './components/Formulabar';
+import Table from './components/Table';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -15,7 +13,7 @@ function App() {
       <Toolbar></Toolbar>
       <main>
         <Formulabar></Formulabar>
-        <Table>home</Table>
+        <Table as="canvas"></Table>
       </main>
       <Footer></Footer>
       <div className="ui_overlay">

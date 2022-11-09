@@ -1,21 +1,14 @@
+import React from 'react';
 import style from './table.module.css';
-import React, { ComponentType, FunctionComponent } from 'react';
-import Canvas from './Canvas';
+// render only as canvas while accepting "canvas" as a prop;
+// Inspired by https://github.com/xwinstone/canvastable
 
-type CellProps = {
-  children: ComponentType | string;
-};
-
-const Cell: FunctionComponent<CellProps> = (props) => {
-
+const Table = (props: any) => {
   return (
-    <div
-      spellCheck="false"
-      className={style.editable}
-    >
-      <Canvas></Canvas>
+    <div>
+      This is a table.
     </div>
   );
-};
+}
 
-export default Cell;
+export default Table;
